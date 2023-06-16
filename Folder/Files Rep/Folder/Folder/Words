@@ -1,0 +1,22 @@
+- -attempt n=1
+-anuyway it was ytd nightpast12 wanting to slp that time that i tot of that i dun have to finish the syntax doc in one shot cos i can actually use the syntax for itself, like when the syntax doc is changed, then it simply redefines meaning it creates a better definition/undestanding of what has already been done. unless the change is not syntactical (ie machine-understadnable) den it becomes a stillborn
+-re filename, i din use changelog because it includes other comments, so its more like commentlog/commentarylog, which acutally log has no meaning so its the same meaning as changes/comments/commentaries n fact log suggests that it cannot be edited therefore its not great. so i ended up with words/messages which however could be better replaced if tehre's a word meaning commentary-or-changemsg
+- re `n` the idea is that if theres a syntax error while creating the syntax then obviously the repo becomes a stillborn. so i'll need to create a new repo from scratch, a complete new start other than n will be increased by 1
+= it is actually quite intesinrg
+- so, looks like i just had to do that demarcation thin g. realized taht fking hell it mightn be quite a common action that i need to do if i not goign to re"x" everywhere
+! syntax done
+- hope no bugs with the logic else gotta do n=2
+p316, ok just realiez that this would be hideous in a monorep so need to rework it
+p318, looks like i can jsut give each folder its own changelog acutally. ie a Words file. and global edits can use the top lvl file. ok, in fact, it looks like within a subrep i can khave such folders as well ad infinitum
+- p322, ok let me just do the universe part first assuming this is perfect and i dun care about how hideous it would be in monoreps whichn btw i also already tot of this ytd night too, the idea that you can have the syntax file, and before it is at the first working version, it will be placed outside the world or rather the world does not exist yret
+p339, ok i think its working, but unsure
+! syntax now points to within the world
+# re p, fkinghell screwed up github editor added a spacein front of teh ! was a space in front. looks like a prepatchn is neded now since its no longer in syntax and meaning whatn its supposed to mean wihtout assuming that that space in front of the `!` was not there. anyway insfmrthis, i realiezd that prolly there would be a way to just edit in some exceptions into the Syntax but that would be really ugly
+
+# anyway i just relaized smt. if i really screw smt up in the syntax, i dun have to redo a new attempt, i can simply release a sepaerate pre'patch' that fixes it to syntactically corredct. this wya i can be very much careless, and in any case the idea itself is a great idea, a file format that uses patches to fixup an invalid file to a valid file before some actions are done
+btw vml it wasd ytd night as well, else in mornig before reach train or ll after reach train, toto of that the concept n=1 and etc, i had thte thought that god maybe not created the world on first try but that htis is the first on etha is not stillborn, adn den ok os t hisi jsut couple mins ago only nowtpiyng, i tot of tat maybe it tsithe firs tattempt and nto even a cessful attempt but then god isseus prepatches like as in abnove, adn den i to to fo that q[] so how many times has it been prepatched or perhasp whethr it hs been prepatched onr not
+
+# btw same night was when i tot of that so in the beginning was the word is similar to this in the beinning was the syntax
+
+# ok jsut realiezd one thing. fking hell that day gotta rush (nath? that..). ok so i relaizethat if i just allow adding mulitple items, that is not good enough cause ppl want to edit items taht are not the last item, taht would mean they would need to do insert a new item not append a new item. and that's screwed as that would mean that the algorihtm would not be able to be like can tell which si which without segregating those parts by separate commits which do not touch the other lines when doing inserting of lines to eb able to tell which lines are the ones that are inserted. so to avoid this, just change the rule to allow indenttation.  as well, with that before i realized taht or ml after, it is that i realized that the current syntax does not allow going abck in time to regroup commits. which hwoevr i think that i perhaps already knew that when creating the syntax
+! can undo 1 item now
