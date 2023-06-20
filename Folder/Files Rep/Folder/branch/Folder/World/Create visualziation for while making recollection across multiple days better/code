@@ -1,28 +1,16 @@
 avascript:{ let d =document
 ;d.body.innerHTML ='', d.body.style.height =d.documentElement.style.height ='100%'
 }{ let d =document
-;d.body.innerHTML =`
-<nobr>
-<textarea></textarea><textarea></textarea><textarea></textarea><textarea></textarea><textarea></textarea>
-&nbsp;&nbsp;<textarea></textarea><textarea></textarea>
-<br>
-<textarea></textarea><textarea></textarea><textarea></textarea><textarea></textarea><textarea></textarea>
-&nbsp;&nbsp;<textarea></textarea><textarea></textarea>
-<br>
-<textarea></textarea><textarea></textarea><textarea></textarea><textarea></textarea><textarea></textarea>
-&nbsp;&nbsp;<textarea></textarea><textarea></textarea>
-<br>
-<textarea></textarea><textarea></textarea><textarea></textarea><textarea></textarea><textarea></textarea>
-&nbsp;&nbsp;<textarea></textarea><textarea></textarea>
-<br>
-<textarea></textarea><textarea></textarea><textarea></textarea><textarea></textarea><textarea></textarea>
-&nbsp;&nbsp;<textarea></textarea><textarea></textarea>
-<br>
-</nobr>
-`
+;d.body.innerHTML =[`<nobr>`
+,(`<textarea></textarea><textarea></textarea><textarea></textarea><textarea></textarea><textarea></textarea>
+&nbsp;&nbsp;<textarea></textarea><textarea></textarea>`
++`<br style=font-size:0><button></button><button></button><button></button><button></button><button></button>
+&nbsp;&nbsp;<button></button><button></button>
+<br>`).repeat(5)
+,`</nobr>`].join('')
 
 ;document.querySelectorAll('textarea').forEach((_,x) =>(
-  _.style.height ='30%', _.style.fontSize ='1.3em'
+  _.style.height ='30%', _.style.fontSize ='1.3em', _.style.width ='13.65vw', _.style.verticalAlign='sub'
   , _.spellcheck =false, _.wrap ='off'
   , _.value =localStorage.getItem(x)??''
   , _.oninput=function(){
@@ -32,6 +20,11 @@ avascript:{ let d =document
   , _.onblur  =z =>_.style.overflow ='hidden'
   , _.onblur()
 ))
+
+;document.querySelectorAll('button').forEach((_,x) =>(
+  _.innerText ='+', _.style.marginLeft ='11.5vw', _.style.width ='2.6vw', _.style.marginBottom='.23em'
+))
+
 }
 
 
