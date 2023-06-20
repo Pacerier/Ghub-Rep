@@ -8,3 +8,5 @@
 # so one thing i cant do is tht i cant start a new groupcommit while inside a groupcommit. thus todo[]possibly come up with a syntax to do that. and nowtyping i jus gonna branch
 - caps looks better + forgotten about foobar
 # need to undo an item in this file so need change syntax done[]
+# os jus now on train to sf i tot o fwhat syntax to use for allowing writing commitmsgs before commit is done, and dn tot of tat can try using appending a YET behind. which woudl mean it would sitll be editing until the YET is removed. and wiht thsi syntax i no longer need ot associate the typedhalfway msgs with the previous msg until their complete, or to associate them with a comment. o yea at that time i also toto fhtat i need a gd syntax to be able to do multiline comments. as i would nede tomimpokrt stfuf taht is writtne earlier in . and when thinkign fo that i toto f that fking hell acutlalwy there need tnot be any linakges ebtwen the multiline comemnts and the single lines comemnts, taht it tis he cas erthat in can be using two diferetn types of suyntaxes fo rthem and this is mst new as i dun beelive anyone ot o  foit before, and also new to me.:
+- importYET
