@@ -18,8 +18,16 @@ avascript:{ let d =document
 </nobr>
 `
 
-;document.querySelectorAll('textarea').forEach((_,x) =>(_.style.height ='30%', _.spellcheck=false, _.style.fontSize='1.3em', _.style.whiteSpace='nowrap',
-_.value=localStorage.getItem(x)??'', _.oninput=function(){
-  try{  localStorage.setItem(x, this.value)  }catch(e){alert(e)}
-}))
+;document.querySelectorAll('textarea').forEach((_,x) =>(
+  _.style.height ='30%', _.style.fontSize ='1.3em'
+  , _.spellcheck =false, _.wrap ='off'
+  , _.value =localStorage.getItem(x)??''
+  , _.oninput=function(){
+    try{  localStorage.setItem(x, this.value)  }catch(e){alert(e)}
+  }
+))
 }
+
+
+
+
