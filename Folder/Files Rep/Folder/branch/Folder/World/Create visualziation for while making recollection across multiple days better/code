@@ -23,6 +23,18 @@ avascript:{ let d =document
 
 ;document.querySelectorAll('button').forEach((_,x) =>(
   _.innerText ='+', _.style.marginLeft ='11.5vw', _.style.width ='2.6vw', _.style.marginBottom='.23em'
+  ,_.onmousedown =z=>{
+    if(!_.state){ _.state =1
+      ;_.innerText='%e2%80%93', _.style.padding='0.5em 10em'
+      ;document.querySelectorAll('button').forEach(_ =>_.style.display='none')
+      ;_.style.display =''
+      ;document.querySelectorAll('textarea').forEach((_,y) =>_.style.display =y===x?(_.style.width='98%',_.style.height='92%',''):'none')
+    }else{ _.state =undefined
+      ;_.innerText='+', _.style.padding=''
+      ;document.querySelectorAll('button').forEach(_ =>_.style.display='')
+      ;document.querySelectorAll('textarea').forEach((_,y) =>(_.style.display='', _.style.height='30%', _.style.width='13.65vw'))
+    }
+  }
 ))
 
 }
