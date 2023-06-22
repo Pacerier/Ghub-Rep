@@ -11,7 +11,7 @@ avascript:{ let d =document
 
 ;document.querySelectorAll('textarea').forEach((_,x) =>(
   _.style.height ='30%', _.style.fontSize ='1.3em', _.style.width ='13.65vw', _.style.verticalAlign='sub'
-  , _.spellcheck =false, _.wrap ='off'
+  , _.spellcheck =false
   , _.value =localStorage.getItem(x)??''
   , _.oninput=function(){
     try{  localStorage.setItem(x, this.value)  }catch(e){alert(e)}
