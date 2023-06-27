@@ -11,7 +11,7 @@ avascript:{ let d =document
 
 ;document.querySelectorAll('textarea').forEach((_,x) =>(
   _.style.height ='30%', _.style.fontSize ='1.3em', _.style.width ='13.65vw', _.style.verticalAlign='sub'
-  , _.spellcheck =false
+  , _.spellcheck =false, _.wrap='off'
   , _.value =localStorage.getItem(x)??''
   , _.oninput=function(){
     try{  localStorage.setItem(x, this.value)  }catch(e){alert(e)}
@@ -28,17 +28,13 @@ avascript:{ let d =document
       ;_.innerText='%e2%80%93', _.style.padding='0.5em 10em'
       ;document.querySelectorAll('button').forEach(_ =>_.style.display='none')
       ;_.style.display =''
-      ;document.querySelectorAll('textarea').forEach((_,y) =>_.style.display =y===x?(_.style.width='98%',_.style.height='92%',''):'none')
+      ;document.querySelectorAll('textarea').forEach((_,y) =>_.style.display =y===x?(_.style.width='98%',_.style.height='92%',_.wrap='',''):'none')
     }else{ _.state =undefined
       ;_.innerText='+', _.style.padding=''
       ;document.querySelectorAll('button').forEach(_ =>_.style.display='')
-      ;document.querySelectorAll('textarea').forEach((_,y) =>(_.style.display='', _.style.height='30%', _.style.width='13.65vw'))
+      ;document.querySelectorAll('textarea').forEach((_,y) =>(_.style.display='', _.style.height='30%', _.style.width='13.65vw', _.wrap='off'))
     }
   }
 ))
 
 }
-
-
-
-
