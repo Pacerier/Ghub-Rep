@@ -6,7 +6,7 @@ avascript:{ let d =document
 &nbsp;&nbsp;<textarea></textarea><textarea></textarea>`
 +`<br style=font-size:0><button></button><button></button><button></button><button></button><button></button>
 &nbsp;&nbsp;<button></button><button></button>
-<br>`).repeat(6)
+<br>`).repeat(10)
 ,`</nobr>`].join('')
 
 ;document.querySelectorAll('textarea').forEach((_,x) =>(
